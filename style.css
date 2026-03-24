@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* 🔥 START SCREEN */
+.start-container {
+  display: flex;
+  width: 900px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.left {
+  flex: 1;
+  padding: 50px;
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.left p {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.features span {
+  display: block;
+  margin: 6px 0;
+  opacity: 0.7;
+}
+
+/* RIGHT PANEL */
+.right {
+  width: 320px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h2 {
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.easy { background: #22c55e; }
+.medium { background: #f59e0b; }
+.hard { background: #ef4444; }
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* 🎮 GAME UI */
+.card {
+  width: 360px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress-box {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #22c55e;
+}
+
+.q-count {
+  font-size: 13px;
+  opacity: 0.7;
+  margin: 5px 0;
+}
+
+/* OPTIONS */
+.options button {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options button:hover {
+  background: #3b82f6;
+  transform: scale(1.05);
+}
+
+.correct {
+  background: #22c55e !important;
+}
+
+.wrong {
+  background: #ef4444 !important;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* RESULT */
+.score-text {
+  font-size: 20px;
+  margin: 10px 0;
+}

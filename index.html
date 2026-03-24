@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BODMAS MASTER</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Premium Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- 🔥 START SCREEN -->
+  <div id="startScreen" class="start-container">
+
+    <div class="left">
+      <h1>🧠 BODMAS Master</h1>
+      <p>Train your brain with smart math challenges.<br>
+         Improve speed, accuracy & logic.</p>
+
+      <div class="features">
+        <span>⚡ Fast Gameplay</span>
+        <span>🎯 MCQ Practice</span>
+        <span>📊 Score Tracking</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Start Game</h2>
+
+      <button onclick="startGame('easy')" class="btn easy">Easy</button>
+      <button onclick="startGame('medium')" class="btn medium">Medium</button>
+      <button onclick="startGame('hard')" class="btn hard">Hard</button>
+
+      <p class="note">Choose difficulty to begin</p>
+    </div>
+
+  </div>
+
+  <!-- 🎮 GAME SCREEN -->
+  <div id="gameScreen" class="card hidden">
+
+    <div class="top">
+      <span>Score: <b id="score">0</b></span>
+      <span>⏱ <b id="timer">10</b>s</span>
+    </div>
+
+    <div class="progress-box">
+      <div id="progressBar"></div>
+    </div>
+
+    <div class="q-count" id="qCount"></div>
+
+    <h2 id="question"></h2>
+
+    <div id="options" class="options"></div>
+
+    <p id="feedback"></p>
+
+  </div>
+
+  <!-- 🎯 RESULT -->
+  <div id="resultScreen" class="card hidden">
+    <h2>🎯 Your Performance</h2>
+
+    <p>Total Questions: <span id="totalQ"></span></p>
+    <p>Correct Answers: <span id="correctQ"></span></p>
+    <p class="score-text">Score: <span id="finalScore"></span></p>
+
+    <button onclick="restart()" class="btn">Play Again</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
